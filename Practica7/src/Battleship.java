@@ -1,6 +1,8 @@
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Battleship extends JFrame {
     private Image icono;
@@ -66,5 +68,12 @@ public class Battleship extends JFrame {
 
     public static void main(String[] args) {
         Battleship batalla = new Battleship();
+    }
+    class ManejadorCelda implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+        }
     }
 }
